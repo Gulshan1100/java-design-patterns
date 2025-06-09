@@ -1,5 +1,12 @@
 package creational_design_patterns.builder.example.director;
 
+import creational_design_patterns.builder.example.builders.Builder;
+import creational_design_patterns.builder.example.cars.CarType;
+import creational_design_patterns.builder.example.components.Engine;
+import creational_design_patterns.builder.example.components.GPSNavigator;
+import creational_design_patterns.builder.example.components.Transmission;
+import creational_design_patterns.builder.example.components.TripComputer;
+
 /**
  * Director defines the order of building steps. It works with a builder object
  * through common Builder interface. Therefore it may not know what product is

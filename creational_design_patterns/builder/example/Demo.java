@@ -1,5 +1,11 @@
 package creational_design_patterns.builder.example;
 
+import creational_design_patterns.builder.example.builders.CarBuilder;
+import creational_design_patterns.builder.example.builders.CarManualBuilder;
+import creational_design_patterns.builder.example.cars.Car;
+import creational_design_patterns.builder.example.cars.Manual;
+import creational_design_patterns.builder.example.director.Director;
+
 /**
  * Demo class. Everything comes together here.
  */
@@ -17,7 +23,7 @@ public class Demo {
         // The final product is often retrieved from a builder object, since
         // Director is not aware and not dependent on concrete builders and
         // products.
-        Car car = builder.getResult();
+        Car car = (Car) builder.getResult();
         System.out.println("Car built:\n" + car.getCarType());
 
 
